@@ -365,68 +365,70 @@
         
             <br>
         
-            <div class="row panel_body">
-        
-                <div class="col-12 col-md-4 form_items form_title">
-                    お名前
-                </div>
-                <div class="col-12 col-md-8 form_items form_body">
-                    <div class="cp_iptxt">
-                        <input type="text" name="name" value="" placeholder="ぱあとわん太郎">
-                        <i class="user_icon fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+            <form method="POST" action="info_form.php">
+                <div class="row panel_body">
+            
+                    <div class="col-12 col-md-4 form_items form_title">
+                        お名前
                     </div>
-                </div>
-        
-                <div class="col-12 col-md-4 form_items form_title">
-                    フリガナ
-                </div>
-                <div class="col-12 col-md-8 form_items form_body">
-                    <div class="cp_iptxt">
-                        <input type="text" name="name_kana" value="" placeholder="パアトワンタロウ">
-                        <i class="user_icon fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                    <div class="col-12 col-md-8 form_items form_body">
+                        <div class="cp_iptxt">
+                            <input type="text" name="name" value="" placeholder="ぱあとわん太郎">
+                            <i class="user_icon fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                        </div>
                     </div>
-                </div>
-        
-                <div class="col-12 col-md-4 form_items form_title kiboushokushu">
-                    希望職種
-                </div>
-                <div class="col-12 col-md-8 form_items form_body">
-                    <div class="cp_ipselect cp_sl01">
-                        <i class="tools_icon fa fa-tools fa-lg fa-fw" aria-hidden="true"></i>
-                        <select class="select" required>
-                            <option value="" hidden>選択してください</option>
-                            <option value="1">グラフィックデザイナー</option>
-                            <option value="2">WEBデザイナー</option>
-                            <option value="3">CADオペレータ</option>
-                        </select>
+            
+                    <div class="col-12 col-md-4 form_items form_title">
+                        フリガナ
                     </div>
-                </div>
-        
-                <div class="col-12 col-md-4 form_items form_title">
-                    メールアドレス
-                </div>
-                <div class="col-12 col-md-8 form_items form_body">
-                    <div class="cp_iptxt">
-                        <input type="email" name="email" value="" placeholder="info@part-one.com">
-                        <i class="mail_icon fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                    <div class="col-12 col-md-8 form_items form_body">
+                        <div class="cp_iptxt">
+                            <input type="text" name="name_kana" value="" placeholder="パアトワンタロウ">
+                            <i class="user_icon fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                        </div>
                     </div>
-                </div>
-        
-                <div class="col-12 col-md-4 form_items form_title">
-                    志望動機
-                </div>
-                <div class="col-12 col-md-8 form_items form_body">
-                    <div class="cp_iptxt">
-                        <textarea name="content" cols="20" rows="5" placeholder="志望動機を入力してください。"></textarea>
-                        <i class="fukidashi_icon fa fa-comment-alt fa-lg fa-fw" aria-hidden="true"></i>
+            
+                    <div class="col-12 col-md-4 form_items form_title kiboushokushu">
+                        希望職種
                     </div>
+                    <div class="col-12 col-md-8 form_items form_body">
+                        <div class="cp_ipselect cp_sl01">
+                            <i class="tools_icon fa fa-tools fa-lg fa-fw" aria-hidden="true"></i>
+                            <select name="hope_job" class="select" required>
+                                <option value="" hidden>選択してください</option>
+                                <option value="1">グラフィックデザイナー</option>
+                                <option value="2">WEBデザイナー</option>
+                                <option value="3">CADオペレータ</option>
+                            </select>
+                        </div>
+                    </div>
+            
+                    <div class="col-12 col-md-4 form_items form_title">
+                        メールアドレス
+                    </div>
+                    <div class="col-12 col-md-8 form_items form_body">
+                        <div class="cp_iptxt">
+                            <input type="email" name="email" value="" placeholder="info@part-one.com">
+                            <i class="mail_icon fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                        </div>
+                    </div>
+            
+                    <div class="col-12 col-md-4 form_items form_title">
+                        志望動機
+                    </div>
+                    <div class="col-12 col-md-8 form_items form_body">
+                        <div class="cp_iptxt">
+                            <textarea name="motivation" cols="20" rows="5" placeholder="志望動機を入力してください。"></textarea>
+                            <i class="fukidashi_icon fa fa-comment-alt fa-lg fa-fw" aria-hidden="true"></i>
+                        </div>
+                    </div>
+            
+                    <div class="attention pl-3">※上記項目は全て必須項目にしてください。</div>
+            
                 </div>
-        
-                <div class="attention pl-3">※上記項目は全て必須項目にしてください。</div>
-        
-            </div>
-        
-            <div class="button my-3">応募する</div>
+            
+                <input type="submit" class="button my-3 mx-auto" value="応募する"></input>
+            </form>
         
         </div>
     </div>
