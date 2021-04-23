@@ -1,0 +1,399 @@
+.job {
+  // title部分
+  .title_bar {
+    /*親div*/
+    margin-top: 2rem;
+    width: 100%;
+    position: relative; /*相対配置*/
+    .cube {
+      margin-left: 0;
+    }
+
+    .title_item {
+      position: absolute;
+      top: 0rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+    }
+
+    .title_top {
+      font-family: $title_font;
+      color: $glay;
+      font-size: 3.5rem;
+      text-align: center;
+    }
+
+    .title_bottom {
+      font-family: $title_sub_font;
+      color: $glay;
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 0.1rem;
+      padding-left: 3.2rem;
+    }
+  }
+
+  .br {
+    display: none;
+  }
+
+  .parent {
+    text-align: center;
+
+    .parent_title {
+      font-family: $title_sub_font;
+      color: $title_color;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding-left: 6px;
+      border-left: solid 6px $title_color;
+    }
+    .parent_body {
+      font-family: $title_sub_font;
+      color: $dark_glay;
+      text-align: left;
+      padding: 0.8rem 0.8rem;
+    }
+    .child {
+      .child_img {
+        width: 10vw;
+        height: 10vw;
+      }
+    }
+  }
+
+  hr.line {
+    border: none;
+    border-top: 1px dashed #999;
+  }
+
+  .question_area {
+    width: 100%;
+    text-align: left;
+    .question_parent {
+      padding-left: 6px;
+      border-left: solid 6px $title_color;
+    }
+    .question_title {
+      font-family: $title_sub_font;
+      color: $white;
+      background-color: $title_color;
+      font-size: 1.2rem;
+      padding: 2px 12px;
+    }
+
+    .question {
+      font-family: $title_sub_font;
+      font-size: larger;
+      color: $title_color;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .answer {
+      font-family: $title_sub_font;
+      font-size: medium;
+      color: $dark_glay;
+    }
+  }
+
+  .creator {
+    .creator_title {
+      font-family: $title_sub_font;
+      font-size: 1.4rem;
+      color: $title_color;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      span {
+        border-left: solid 2px $title_color;
+        border-right: solid 2px $title_color;
+        padding: 2px 1rem;
+      }
+    }
+
+    .creator_title:before {
+      content: "";
+      height: 2px;
+      flex-grow: 1;
+      background-color: $title_color;
+    }
+
+    .creator_title:after {
+      content: "";
+      height: 2px;
+      flex-grow: 1;
+      background-color: $title_color;
+    }
+
+    .arrowlist {
+      font-family: $title_sub_font;
+      color: $glay;
+
+      .arrow {
+        margin: auto;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .form {
+    background-color: #ededed;
+    padding: 1.6rem 0.8rem;
+
+    .form_panel {
+      width: 90%;
+      margin-left: 3rem;
+    }
+
+    .title {
+      font-family: $title_sub_font;
+      color: $title_color;
+      font-size: 1rem;
+      font-weight: bold;
+      border-left: solid 5px $title_color;
+      padding-left: 0.3rem;
+    }
+
+    .form_base {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .cp_iptxt {
+      position: relative;
+      width: 100%;
+    }
+    .cp_iptxt input,
+    .cp_iptxt textarea {
+      font: 15px/24px sans-serif;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 8px 0;
+      padding: 0.3em;
+      transition: 0.3s;
+      border: 1px solid #1b2538;
+      border-radius: 4px;
+      outline: none;
+    }
+    .cp_iptxt input:focus,
+    .cp_iptxt textarea:focus {
+      border-color: #da3c41;
+    }
+    .cp_iptxt input,
+    .cp_iptxt textarea {
+      padding-left: 40px;
+    }
+    .cp_iptxt i {
+      position: absolute;
+      top: 30px;
+      left: 0;
+      padding: 9px 8px;
+      transition: 0.3s;
+      color: #aaaaaa;
+    }
+    .cp_iptxt .job_icon {
+      position: absolute;
+      top: 37px;
+      left: 5px;
+    }
+
+    .cp_iptxt .time_icon {
+      position: absolute;
+      top: 9px;
+      left: 5px;
+    }
+
+    .cp_iptxt .fukidashi_icon {
+      position: absolute;
+      top: 38px;
+      left: 6px;
+    }
+
+    .cp_iptxt input:focus + i,
+    .cp_iptxt textarea:focus + i {
+      color: #da3c41;
+    }
+
+    .cp_ipselect {
+      overflow: hidden;
+      width: 100%;
+      text-align: center;
+    }
+    .cp_ipselect select {
+      width: 80%;
+      padding-right: 1em;
+      cursor: pointer;
+      text-indent: 0.01px;
+      text-overflow: ellipsis;
+      border: none;
+      outline: none;
+      background: transparent;
+      background-image: none;
+      box-shadow: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .cp_ipselect select::-ms-expand {
+      display: none;
+    }
+    .cp_ipselect.cp_sl01 {
+      position: relative;
+      border: 1px solid #1b2538;
+      border-radius: 4px;
+      background: #ffffff;
+    }
+    .cp_ipselect.cp_sl01::before {
+      position: absolute;
+      top: 0.8em;
+      right: 0.9em;
+      width: 0;
+      height: 0;
+      padding: 0;
+      content: "";
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #666666;
+      pointer-events: none;
+    }
+    .cp_ipselect.cp_sl01 select {
+      padding: 8px 38px 8px 8px;
+      color: #666666;
+    }
+
+    .cp_ipselect.cp_sl01 i {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      padding: 9px 8px;
+      transition: 0.3s;
+      color: #aaaaaa;
+    }
+
+    label {
+      cursor: pointer;
+      color: $glay;
+      text-align: center;
+      padding: 5px;
+      width: 6rem;
+      border: 1px solid #434343;
+      background-color: $white;
+      border-radius: 15px;
+      margin: 2px 4px;
+    }
+    input[type="checkbox"] {
+      display: none;
+    }
+    .check_box:checked + .label {
+      color: $white;
+      background-color: $title_color;
+    }
+  }
+
+  .form_under {
+    background-color: #ededed;
+    text-align: center;
+
+    .attention {
+      display: inline-block;
+      color: #0366d6;
+      cursor: pointer;
+    }
+
+    .attention:hover {
+      border-bottom: solid 1px #0366d6;
+    }
+
+    .button {
+      font-family: $title_sub_font;
+      color: $white;
+      background-color: $title_color;
+      font-weight: bold;
+      width: 200px;
+      text-align: center;
+      padding: 0.5rem 0;
+      margin: auto;
+    }
+  }
+
+  .modal {
+    .main_title {
+      font-family: $title_font;
+      color: $title_color;
+      font-size: 2rem;
+    }
+
+    .sub_title {
+      font-family: $title_sub_font;
+      color: $title_color;
+      font-size: 1rem;
+      margin-top: -0.5rem;
+    }
+
+    .modal-body {
+      .title {
+        color: $title_color;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .body {
+        color: $glay;
+        font-size: 0.8rem;
+      }
+
+      p {
+        margin-left: 1rem;
+      }
+
+      .details {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+// スマホ版
+@media screen and (max-width: 767px) {
+  .job {
+    .br {
+      display: block;
+    }
+
+    .cube_base {
+      margin-left: 1rem;
+    }
+
+    .parent {
+      .child {
+        .child_img {
+          width: 25vw;
+          height: 25vw;
+        }
+      }
+    }
+
+    .form {
+      .form_base {
+        margin-right: 0;
+        margin-left: -20px;
+      }
+
+      label {
+        font-size: 0.6rem;
+        padding: 3px !important;
+        width: 5rem;
+        border: 1px solid #434343;
+        background-color: $white;
+        border-radius: 15px;
+        margin: 2px 4px;
+      }
+    }
+    
+
+  }
+}

@@ -1,0 +1,112 @@
+.profile {
+  // title部分
+  .title_bar {
+    /*親div*/
+    margin-top: 2rem;
+    width: 100%;
+    position: relative; /*相対配置*/
+    .cube {
+      margin-left: 0;
+    }
+
+    .title_item {
+      position: absolute;
+      top: 0rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+    }
+
+    .title_top {
+      font-family: $title_font;
+      color: $glay;
+      font-size: 3.5rem;
+      text-align: center;
+    }
+
+    .title_bottom {
+      font-family: $title_sub_font;
+      color: $glay;
+      font-size: 1rem;
+      text-align: center;
+      margin-top: -0.4rem;
+    }
+  }
+
+  .panel {
+    width: 100%;
+    text-align: center;
+  }
+
+  .panel_title {
+    display: inline-block;
+    margin-bottom: 2rem;
+    border: solid 1px #0f2350;
+    padding: 0.6rem 0.2rem;
+    span {
+      font-family: $title_sub_font;
+      color: $white;
+      font-weight: bold;
+      background-color: #0f2350;
+      padding: 0.5rem 3rem;
+    }
+  }
+
+  .table1 {
+    margin: auto;
+  }
+
+  .iframe_wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* = height ÷ width × 100 */
+  }
+  .iframe_wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    width: 70%;
+    height: 70%;
+  }
+
+  .items {
+    font-family: $title_sub_font;
+    color: $glay;
+    line-height: 2.5;
+  }
+
+  .map {
+    margin-top: -10rem;
+  }
+
+  .details {
+    font-family: $title_sub_font;
+    color: $glay;
+    line-height: 2.5;
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+// スマホ版
+@media screen and (max-width: 767px) {
+  .profile {
+    .panel_title {
+      margin-bottom: 0.8rem;
+    }
+
+    .iframe_wrap iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    .map {
+      margin-top: 0rem;
+    }
+  }
+}

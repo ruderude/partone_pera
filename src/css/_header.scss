@@ -1,0 +1,223 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN W3",
+    "Hiragino Sans", Meiryo, sans-serif;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  ul.nav {
+    justify-content: space-between;
+
+    a {
+      &::after {
+        background: transparent;
+      }
+    }
+  }
+
+  a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: $glay;
+
+    &::after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: $title_color;
+      transform: scale(0, 1);
+      transform-origin: left top;
+      transition: transform 0.3s;
+    }
+    &:hover::after {
+      transform: scale(1, 1);
+    }
+  }
+
+  .hamburgeranime {
+    display: none;
+  }
+
+  .gnavi-contents {
+    margin-left: auto;
+
+    li {
+      padding: 0 0.6rem;
+    }
+    .list_none.list_width {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      list-style: none;
+      width: calc(70vw / 7);
+      height: 53px;
+      border-left: solid 1px $glay;
+    }
+  }
+
+  .header_nav {
+    display: flex;
+    font-size: 0.8rem;
+    width: 100%;
+    height: 53px;
+
+    &:first-child {
+      width: 100%;
+    }
+
+    .has-children {
+      position: relative;
+    }
+
+    .has-children .children {
+      display: none;
+    }
+    .has-children:hover .children {
+      display: block;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+
+      .list_none {
+        padding: 0.4rem 0.4rem;
+        background-color: $title_color;
+        border-bottom: solid 1px $white;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+
+    .list_none {
+      a {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .sp-gnavi-contents {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+}
+
+// スマホ版
+@media screen and (max-width: 767px) {
+
+  .header {
+    .nav_overlay {
+      background: rgba(0, 0, 0, 0.1);
+      height: 100vh;
+      position: absolute;
+      width: 100%;
+    }
+
+    .pointer {
+      cursor: pointer;
+    }
+
+    .gnavi-contents {
+      display: none;
+      z-index: 100;
+    }
+
+    .sp-gnavi-contents {
+      display: block;
+      background-color: rgba(165, 165, 165, 0.664);
+      width: 100%;
+      text-align: center;
+      z-index: 100;
+
+      li {
+        padding: 0.4rem 0;
+        border-top: solid 1px #fff;
+        border-bottom: solid 1px #fff;
+      }
+
+      .header_cross {
+        padding: 0.6rem;
+        font-size: 1.2rem; 
+        border-top: solid 1px #fff;
+      }
+
+      .hidden_shops {
+        display: none;
+      }
+
+      span {
+        color: #555;
+      }
+    }
+
+    .header_shop {
+      display: inline-block !important;
+    }
+
+    ul.nav {
+      width: 100%;
+    }
+
+    .hamburger_icon {
+      padding: 10px 10px;
+    }
+
+    .hamburgeranime {
+      display: block;
+      position: relative;
+      width: 32px;
+      height: 24px;
+      background-color: transparent;
+      border: 0;
+
+      &:focus {
+        outline: 0;
+      }
+
+      span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        display: inline-block;
+        transition: all 0.4s;
+        box-sizing: border-box;
+        background-color: $glay;
+
+        &.first {
+          top: 0;
+        }
+        &.second {
+          top: 10px;
+        }
+        &.third {
+          bottom: 0;
+        }
+      }
+
+      &.active span.first {
+        transform: translateY(12px) rotate(-45deg);
+      }
+      &.active span.second {
+        opacity: 0;
+      }
+      &.active span.third {
+        transform: translateY(-8px) rotate(45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,627 @@
+a {
+  text-decoration: none;
+}
+
+.index {
+  overflow: hidden;
+
+  .container {
+    margin-top: 2rem;
+  }
+
+  .video {
+    margin-bottom: 5rem;
+  }
+
+  .title {
+    font-family: $title_font;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    color: $title_color;
+    letter-spacing: 0.1rem;
+  }
+
+  .title_sub {
+    font-family: $title_sub_font;
+    color: $glay;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 13rem;
+  }
+
+  .part1_border {
+    font-family: "游明朝体", "YuMincho";
+    color: $dark_glay;
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 7rem;
+  }
+  .part1_border:before,
+  .part1_border:after {
+    color: $dark_glay;
+    border-top: 1px solid;
+    content: "";
+    flex-grow: 1;
+  }
+  .part1_border:before {
+    margin-right: 1rem;
+  }
+  .part1_border:after {
+    margin-left: 1rem;
+  }
+
+  .circle {
+    position: relative;
+    font-family: $title_sub_font;
+    color: $dark_glay;
+    line-height: 1.5rem;
+    display: inline-block;
+    font-family: $title_font;
+    font-size: larger;
+    background-color: $circle;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    border-radius: 50%;
+    border: solid 1px $dark_glay;
+    margin-bottom: 2rem;
+  }
+  .circle span {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 170px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .circle_body {
+    font-family: $title_sub_font;
+    font-size: 1rem;
+    color: $dark_glay;
+    width: 80%;
+    line-height: 2;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  // Works部分
+  .works_image {
+    /*親div*/
+    position: relative; /*相対配置*/
+  }
+
+  .works_image .works1 {
+    position: absolute; /*絶対配置*/
+    color: white; /*文字は白に*/
+    top: 3rem;
+    right: 3rem;
+  }
+
+  .works_image .works2 {
+    position: absolute; /*絶対配置*/
+    color: $glay; /*文字は白に*/
+    background-color: $white;
+    height: 250px;
+    width: 250px;
+    bottom: 3rem;
+    left: 3rem;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .works_image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .works1_top {
+    font-family: $title_font;
+    font-weight: bold;
+    font-size: 6rem;
+  }
+
+  .works1_bottom {
+    font-family: $title_sub_font;
+    font-size: 1.2rem;
+    border-top: solid 1px $white;
+    border-bottom: solid 1px $white;
+  }
+
+  .works2_top {
+    font-family: $title_sub_font;
+    color: $glay;
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .works2_bottom {
+    display: inline-block;
+    cursor: pointer;
+    font-family: $title_sub_font;
+    color: $white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: $button_blue;
+    margin: auto;
+    padding: 5px 10px;
+    width: 70%;
+  }
+
+  // shopsite部分
+  .shop_site_image {
+    /*親div*/
+    position: relative; /*相対配置*/
+  }
+
+  .shop_site_image .shop_site1 {
+    position: absolute;
+    color: $title_color;
+    top: 3rem;
+    left: 3rem;
+  }
+
+  .shop_site_image .shop_site2 {
+    position: absolute;
+    color: $glay;
+    background-color: $white;
+    height: 330px;
+    width: 320px;
+    bottom: 3rem;
+    right: 3rem;
+    padding: 1rem;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .shop_site_image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .shop_site1_top {
+    font-family: $title_font;
+    font-weight: bold;
+    font-size: 5rem;
+  }
+
+  .shop_site_title {
+    color: $title_color;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: none;
+  }
+
+  .shop_site1_bottom {
+    font-family: $title_sub_font;
+    font-size: 1.5rem;
+    color: $glay;
+    border-top: solid 1px $glay;
+    border-bottom: solid 1px $glay;
+  }
+
+  .shop_site2 {
+    padding: 1rem;
+    h6 {
+      color: $title_color;
+    }
+  }
+
+  .shop_site2_top {
+    font-family: $title_sub_font;
+    color: $glay;
+    font-size: 0.8rem;
+    text-align: left;
+    margin: auto;
+  }
+
+  .shop_site2_bottom img {
+    width: 220px;
+    margin: auto;
+  }
+
+  .greet_title1 {
+    font-family: $title_sub_font;
+    color: $glay;
+    font-size: 1.6rem;
+    text-align: center;
+    border-top: solid 1px $glay;
+    border-bottom: solid 1px $glay;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  #greet2 {
+    margin-top: 120px;
+    padding: 1rem 0;
+  }
+
+  .greet_title2 {
+    font-family: $wafu_font;
+    color: $glay;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  .greet {
+    color: $glay;
+    background-color: $circle;
+    width: 70%;
+    padding: 3rem;
+    border-radius: 1rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    p {
+      font-family: $wafu_sub_font;
+      font-size: 0.8rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  // スクロールでスライド処理
+  #part1 {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: opacity 1s, transform 0.5s;
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    -webkit-transition: opacity 1s, transform 0.5s;
+    -moz-transition: opacity 1s, transform 0.5s;
+    -ms-transition: opacity 1s, transform 0.5s;
+    -o-transition: opacity 1s, transform 0.5s;
+  }
+
+  #works_image {
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: opacity 1s, transform 0.8s;
+    -webkit-transition: opacity 1s, transform 0.8s;
+    -moz-transition: opacity 1s, transform 0.8s;
+    -ms-transition: opacity 1s, transform 0.8s;
+    -o-transition: opacity 1s, transform 0.8s;
+    -webkit-transform: translateX(-300px);
+    -moz-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+  }
+
+  #works_top {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: opacity 1s, transform 0.8s;
+    -webkit-transition: opacity 1s, transform 0.8s;
+    -moz-transition: opacity 1s, transform 0.8s;
+    -ms-transition: opacity 1s, transform 0.8s;
+    -o-transition: opacity 1s, transform 0.8s;
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+  }
+
+  #works_bottom {
+    display: none;
+  }
+
+  #shops_image {
+    transform: translateX(300px);
+    opacity: 0;
+    transition: opacity 1s, transform 0.8s;
+    -webkit-transition: opacity 1s, transform 0.8s;
+    -moz-transition: opacity 1s, transform 0.8s;
+    -ms-transition: opacity 1s, transform 0.8s;
+    -o-transition: opacity 1s, transform 0.8s;
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+  }
+
+  #shops_top {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: opacity 1s, transform 0.8s;
+    -webkit-transition: opacity 1s, transform 0.8s;
+    -moz-transition: opacity 1s, transform 0.8s;
+    -ms-transition: opacity 1s, transform 0.8s;
+    -o-transition: opacity 1s, transform 0.8s;
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+  }
+
+  #shops_bottom {
+    display: none;
+  }
+
+  /* 条件を満たしたあとに追加するクラス */
+  .fadein {
+    opacity: 1 !important;
+    /*表示させる*/
+    transform: translateX(0) !important;
+    transform: translatey(0) !important;
+    /* 位置を最初の位置に戻す */
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  .sp {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+}
+
+// スマホ版
+@media screen and (max-width: 767px) {
+  .index {
+    overflow: hidden;
+
+    .sp {
+      display: block;
+    }
+
+    .pc {
+      display: none;
+    }
+
+    .container {
+      margin-top: 6rem;
+    }
+
+    .title {
+      font-size: 2rem;
+      width: 100%;
+    }
+
+    .title_sub {
+      font-size: 0.8rem;
+      width: 100%;
+      line-height: 1rem;
+    }
+
+    .part1_border_sp {
+      font-family: "游明朝体", "YuMincho";
+      color: $dark_glay;
+      display: flex;
+      font-size: 1.6rem;
+      align-items: center;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 7rem;
+    }
+    .part1_border_sp:before,
+    .part1_border_sp:after {
+      color: $dark_glay;
+      border-top: 1px solid;
+      content: "";
+      flex-grow: 1;
+    }
+    .part1_border_sp:before {
+      margin-right: 1rem;
+    }
+    .part1_border_sp:after {
+      margin-left: 1rem;
+    }
+
+    .works_image {
+      .works1 {
+        position: absolute; /*絶対配置*/
+        color: white; /*文字は白に*/
+        font-size: 1rem;
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+
+    .works_image .works2 {
+      position: absolute; /*絶対配置*/
+      color: $glay; /*文字は白に*/
+      background-color: $white;
+      height: 220px;
+      width: 300px;
+      top: 120%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .works_image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .works1_top {
+      font-weight: bold;
+      font-size: 2em;
+    }
+
+    .works1_bottom {
+      font-size: 1.2em;
+    }
+
+    .works2_top_sp {
+      font-family: $title_sub_font;
+      color: $glay;
+      text-align: left;
+      font-size: 0.9rem;
+      padding: 1rem;
+    }
+
+    .works_image {
+      margin-bottom: 200px !important;
+    }
+
+    .shop_site_image .shop_site1 {
+      position: absolute; /*絶対配置*/
+      color: $title_color; /*文字は白に*/
+      top: 1rem;
+      left: 1rem;
+    }
+
+    .shop_site_image .shop_site2 {
+      position: absolute; /*絶対配置*/
+      color: $glay; /*文字は白に*/
+      background-color: $white;
+      height: 190px;
+      width: 320px;
+      top: 120%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .shop_site_image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .shop_site_title {
+      display: block;
+    }
+
+    .shop_site1_top {
+      font-size: 2rem;
+    }
+
+    .shop_site1_bottom {
+      font-size: 1rem;
+    }
+
+    .shop_site2_top_sp {
+      font-family: $title_sub_font;
+      color: $glay;
+      font-size: 0.8rem;
+      text-align: left;
+      margin: auto;
+    }
+
+    .shop_site_image {
+      margin-bottom: 300px;
+    }
+
+    #greet2 {
+      margin-top: 120px;
+      font-size: 1.2rem;
+      padding: 0.4rem 0;
+    }
+
+    .greet {
+      padding: 2rem 1rem;
+      width: 90%;
+
+      p {
+        line-height: 1.6rem;
+      }
+    }
+
+    .greet_title2 {
+      line-height: 2.8rem;
+    }
+
+    // スクロール
+    #part1_sp {
+      transform: translateY(50px);
+      opacity: 0;
+      transition: opacity 1s, transform 0.5s;
+      -webkit-transform: translateY(50px);
+      -moz-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+      -o-transform: translateY(50px);
+      -webkit-transition: opacity 1s, transform 0.5s;
+      -moz-transition: opacity 1s, transform 0.5s;
+      -ms-transition: opacity 1s, transform 0.5s;
+      -o-transition: opacity 1s, transform 0.5s;
+    }
+
+    #works_image_sp {
+      transform: translateX(-300px);
+      opacity: 0;
+      transition: opacity 1s, transform 0.8s;
+      -webkit-transition: opacity 1s, transform 0.8s;
+      -moz-transition: opacity 1s, transform 0.8s;
+      -ms-transition: opacity 1s, transform 0.8s;
+      -o-transition: opacity 1s, transform 0.8s;
+      -webkit-transform: translateX(-300px);
+      -moz-transform: translateX(-300px);
+      -ms-transform: translateX(-300px);
+      -o-transform: translateX(-300px);
+    }
+
+    #works_top_sp {
+      transform: translatey(100px);
+      opacity: 0;
+      transition: opacity 1s, transform 0.8s;
+      -webkit-transition: opacity 1s, transform 0.8s;
+      -moz-transition: opacity 1s, transform 0.8s;
+      -ms-transition: opacity 1s, transform 0.8s;
+      -o-transition: opacity 1s, transform 0.8s;
+      -webkit-transform: translatey(100px);
+      -moz-transform: translatey(100px);
+      -ms-transform: translatey(100px);
+      -o-transform: translatey(100px);
+    }
+
+    #works_bottom_sp {
+      display: none;
+    }
+
+    #shops_image_sp {
+      opacity: 0;
+      transform: translateX(300px);
+      transition: opacity 1s, transform 0.8s;
+      -webkit-transition: opacity 1s, transform 0.8s;
+      -moz-transition: opacity 1s, transform 0.8s;
+      -ms-transition: opacity 1s, transform 0.8s;
+      -o-transition: opacity 1s, transform 0.8s;
+      -webkit-transform: translateX(300px);
+      -moz-transform: translateX(300px);
+      -ms-transform: translateX(300px);
+      -o-transform: translateX(300px);
+    }
+
+    #shops_top_sp {
+      opacity: 0;
+      transform: translatey(100px);
+      transition: opacity 1s, transform 0.8s;
+      -webkit-transition: opacity 1s, transform 0.8s;
+      -moz-transition: opacity 1s, transform 0.8s;
+      -ms-transition: opacity 1s, transform 0.8s;
+      -o-transition: opacity 1s, transform 0.8s;
+      -webkit-transform: translatey(100px);
+      -moz-transform: translatey(100px);
+      -ms-transform: translatey(100px);
+      -o-transform: translatey(100px);
+    }
+
+    #shops_bottom_sp {
+      display: none;
+    }
+
+  }
+}

@@ -1,0 +1,327 @@
+.info {
+  // title部分
+  .title_bar {
+    /*親div*/
+    margin-top: 2rem;
+    width: 100%;
+    position: relative; /*相対配置*/
+    .cube {
+      margin-left: 0;
+    }
+
+    .title_item {
+      position: absolute;
+      top: 0rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+    }
+
+    .title_top {
+      font-family: $title_font;
+      color: $glay;
+      font-size: 3.5rem;
+      text-align: center;
+    }
+
+    .title_bottom {
+      font-family: $title_sub_font;
+      color: $glay;
+      font-size: 1rem;
+      text-align: center;
+      margin-top: -0.4rem;
+    }
+  }
+
+  .br {
+    display: none;
+  }
+
+  .attention {
+    font-family: $title_sub_font;
+    color: $glay;
+  }
+
+  .sub_title_1 {
+    font-family: $title_sub_font;
+    color: $title_color;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  table {
+    font-family: $title_sub_font;
+    color: $glay;
+    font-size: 0.8rem;
+  }
+
+  table.table01 {
+    width: 100%;
+    border-right: $glay solid 1px;
+    border-top: $glay solid 1px;
+    border-collapse: collapse;
+  }
+
+  table.table01 tbody th {
+    background: #ededed;
+    color: $glay;
+    padding: 10px 15px;
+    min-width: 8rem;
+    border-bottom: $glay solid 1px;
+    border-left: $glay solid 1px;
+    vertical-align: top;
+  }
+  table.table01 tbody tr:last-child th {
+    border-bottom: $glay solid 1px;
+  }
+  table.table01 tbody td {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-left: $glay solid 1px;
+    border-bottom: $glay solid 1px;
+    vertical-align: top;
+  }
+
+  hr.line {
+    border: none;
+    border-top: 1px dashed #999;
+  }
+
+  .form {
+    background-color: $panel_background_color;
+    width: 100%;
+    padding: 1.6rem 0.8rem;
+    padding-top: 2rem;
+    .panel {
+      width: 100%;
+      text-align: center;
+    }
+
+    .panel_title {
+      display: inline-block;
+      padding: 0.6rem 0.2rem;
+      span {
+        font-family: $title_sub_font;
+        color: $glay;
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+    }
+
+    .button {
+      font-family: $title_sub_font;
+      color: $white;
+      background-color: $title_color;
+      font-weight: bold;
+      width: 200px;
+      text-align: center;
+      padding: 0.5rem 0;
+      margin: auto;
+    }
+
+    .form_title {
+      text-align: right;
+      padding-top: 1rem;
+    }
+
+    .cp_iptxt {
+      position: relative;
+      width: 80%;
+    }
+    .cp_iptxt input,
+    .cp_iptxt textarea {
+      font: 15px/24px sans-serif;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 8px 0;
+      padding: 0.3em;
+      transition: 0.3s;
+      border: 1px solid #1b2538;
+      border-radius: 4px;
+      outline: none;
+    }
+    .cp_iptxt input:focus,
+    .cp_iptxt textarea:focus {
+      border-color: #da3c41;
+    }
+    .cp_iptxt input,
+    .cp_iptxt textarea {
+      padding-left: 40px;
+    }
+    .cp_iptxt i {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      padding: 9px 8px;
+      transition: 0.3s;
+      color: #aaaaaa;
+    }
+
+    .cp_iptxt .user_icon {
+      position: absolute;
+      top: 16px;
+      left: 5px;
+    }
+
+    .cp_iptxt .mail_icon {
+      position: absolute;
+      top: 16px;
+      left: 5px;
+    }
+
+    .cp_iptxt .fukidashi_icon {
+      position: absolute;
+      top: 16px;
+      left: 5px;
+    }
+
+    .cp_iptxt input:focus + i,
+    .cp_iptxt textarea:focus + i {
+      color: #da3c41;
+    }
+
+    .cp_ipselect {
+      overflow: hidden;
+      width: 80%;
+      text-align: center;
+    }
+    .cp_ipselect select {
+      width: 80%;
+      padding-right: 1em;
+      cursor: pointer;
+      text-indent: 0.01px;
+      text-overflow: ellipsis;
+      border: none;
+      outline: none;
+      background: transparent;
+      background-image: none;
+      box-shadow: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .cp_ipselect select::-ms-expand {
+      display: none;
+    }
+    .cp_ipselect.cp_sl01 {
+      position: relative;
+      border: 1px solid #1b2538;
+      border-radius: 4px;
+      background: #ffffff;
+    }
+    .cp_ipselect.cp_sl01::before {
+      position: absolute;
+      top: 0.8em;
+      right: 0.9em;
+      width: 0;
+      height: 0;
+      padding: 0;
+      content: "";
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #666666;
+      pointer-events: none;
+    }
+    .cp_ipselect.cp_sl01 select {
+      padding: 8px 38px 8px 8px;
+      color: #666666;
+    }
+
+    .cp_ipselect.cp_sl01 i {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      padding: 9px 8px;
+      transition: 0.3s;
+      color: #aaaaaa;
+    }
+
+    .cp_ipselect .tools_icon {
+      position: absolute;
+      top: 8px;
+      left: 4px;
+    }
+
+    .kiboushokushu {
+      padding-top: 9px;
+    }
+
+    .attention {
+      margin: auto;
+    }
+  }
+}
+
+// スマホ版
+@media screen and (max-width: 767px) {
+  .info {
+    .br {
+      display: block;
+    }
+
+    .job_title {
+      text-align: center;
+      background-color: #ededed;
+      padding: 0.4rem 0;
+    }
+
+    table {
+      font-size: 0.8rem;
+    }
+
+    table.table01 {
+      border-right: $white solid 0px;
+      border-top: $white solid 0px;
+
+      tbody th {
+        color: $title_color;
+        background: $white;
+        border-bottom: $white solid 0px;
+        border-left: $white solid 0px;
+        padding: 6px 12px;
+      }
+      tbody tr:last-child th {
+        border-bottom: $white solid 0px;
+      }
+      tbody td {
+        border-left: $white solid 0px;
+        border-bottom: $white solid 0px;
+        padding: 6px 12px;
+      }
+      tbody th {
+        display: block;
+      }
+      tbody td {
+        display: block;
+      }
+      tbody td::before {
+        content: attr(label);
+        float: left;
+        clear: both;
+        font-weight: bold;
+      }
+      tbody td p {
+        padding-left: 6em;
+      }
+    }
+    .form {
+      text-align: left;
+      .form_title {
+        text-align: left;
+      }
+
+      .panel_body {
+        width: 100%;
+        margin-left: 60%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+      }
+
+      .attention {
+        margin-left: -1.2rem;
+      }
+    }
+  }
+}

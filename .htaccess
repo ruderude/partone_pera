@@ -1,0 +1,4 @@
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ http://http://part-one.jp/$1 [R=301,L]
